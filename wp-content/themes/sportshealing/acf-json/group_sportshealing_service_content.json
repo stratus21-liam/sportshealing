@@ -1,0 +1,382 @@
+{
+    "key": "group_sportshealing_service_content",
+    "title": "Service Detail Content",
+    "fields": [
+        {
+            "key": "field_service_tab_media",
+            "label": "Media",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_service_icon",
+            "label": "Service Icon",
+            "name": "sportshealing_service_icon",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_service_detail_image",
+            "label": "Detail Image",
+            "name": "sportshealing_service_detail_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_service_gallery",
+            "label": "Service Gallery",
+            "name": "sportshealing_service_gallery",
+            "type": "gallery",
+            "return_format": "array",
+            "preview_size": "medium",
+            "insert": "append"
+        },
+        {
+            "key": "field_service_tab_benefits",
+            "label": "Benefits",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_service_benefits_heading",
+            "label": "Benefits Heading",
+            "name": "sportshealing_service_benefits_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_service_benefits",
+            "label": "Benefits",
+            "name": "sportshealing_service_benefits",
+            "type": "repeater",
+            "button_label": "Add Benefit",
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_service_benefit_text",
+                    "label": "Text",
+                    "name": "text",
+                    "type": "text",
+                    "default_value": "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+                }
+            ]
+        },
+        {
+            "key": "field_service_tab_sidebar",
+            "label": "Sidebar",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_service_brochures",
+            "label": "Brochure Downloads",
+            "name": "sportshealing_service_brochures",
+            "type": "repeater",
+            "button_label": "Add Brochure",
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_service_brochure_label",
+                    "label": "Label",
+                    "name": "label",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum PDF"
+                },
+                {
+                    "key": "field_service_brochure_file",
+                    "label": "File",
+                    "name": "file",
+                    "type": "file",
+                    "return_format": "array"
+                }
+            ]
+        },
+        {
+            "key": "field_service_help_heading",
+            "label": "Help Box Heading",
+            "name": "sportshealing_service_help_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor"
+        },
+        {
+            "key": "field_service_help_copy",
+            "label": "Help Box Copy",
+            "name": "sportshealing_service_help_copy",
+            "type": "textarea",
+            "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "rows": 3
+        },
+        {
+            "key": "field_service_help_phone",
+            "label": "Help Box Phone",
+            "name": "sportshealing_service_help_phone",
+            "type": "text",
+            "default_value": "+1 234 467 88"
+        },
+        {
+            "key": "field_service_help_email",
+            "label": "Help Box Email",
+            "name": "sportshealing_service_help_email",
+            "type": "email",
+            "default_value": "info@example.com"
+        },
+        {
+            "key": "field_service_shared_content_tab",
+            "label": "Text / Media Rows",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_service_content_rows_enabled",
+            "label": "Show Text / Media Rows",
+            "name": "sportshealing_service_content_rows_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 0
+        },
+        {
+            "key": "field_service_content_rows",
+            "label": "Text Image/Video Rows",
+            "name": "sportshealing_service_content_rows",
+            "type": "repeater",
+            "instructions": "Optional. Add 50/50 text and media rows below the main service detail section. Choose Image or Video in each row; only the fields for the selected media type are used.",
+            "layout": "block",
+            "button_label": "Add Text Image/Video Row",
+            "sub_fields": [
+                {
+                    "key": "field_service_content_row_eyebrow",
+                    "label": "Eyebrow",
+                    "name": "eyebrow",
+                    "type": "text",
+                    "default_value": "Expert Care"
+                },
+                {
+                    "key": "field_service_content_row_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Flexible Content Section"
+                },
+                {
+                    "key": "field_service_content_row_content",
+                    "label": "Content",
+                    "name": "content",
+                    "type": "wysiwyg",
+                    "tabs": "all",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "default_value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>"
+                },
+                {
+                    "key": "field_service_content_row_media_position",
+                    "label": "Media Position",
+                    "name": "media_position",
+                    "type": "select",
+                    "choices": {
+                        "right": "Media Right",
+                        "left": "Media Left"
+                    },
+                    "default_value": "right",
+                    "ui": 1,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_service_content_row_media_type",
+                    "label": "Media Type",
+                    "name": "media_type",
+                    "type": "select",
+                    "instructions": "Choose Image to use the Image field. Choose Video to use the Video URL and Video Thumbnail fields.",
+                    "choices": {
+                        "image": "Image",
+                        "video": "Video"
+                    },
+                    "default_value": "image",
+                    "ui": 1,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_service_content_row_image",
+                    "label": "Image (used only when Media Type is Image)",
+                    "name": "image",
+                    "type": "image",
+                    "instructions": "Optional. Used only when Media Type is Image. Leave empty to use the theme placeholder image.",
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_service_content_row_media_type",
+                                "operator": "==",
+                                "value": "image"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "key": "field_service_content_row_video_image",
+                    "label": "Video Thumbnail (used only when Media Type is Video)",
+                    "name": "video_image",
+                    "type": "image",
+                    "instructions": "Optional. Used only when Media Type is Video. Leave empty to use the theme video placeholder.",
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_service_content_row_media_type",
+                                "operator": "==",
+                                "value": "video"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "key": "field_service_content_row_video_url",
+                    "label": "Video URL (used only when Media Type is Video)",
+                    "name": "video_url",
+                    "type": "url",
+                    "instructions": "Optional. Used only when Media Type is Video. If empty, the row falls back to an image-style placeholder instead of opening a video.",
+                    "default_value": "https://www.youtube.com/watch?v=Y-x0efG1seA",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_service_content_row_media_type",
+                                "operator": "==",
+                                "value": "video"
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_service_content_rows_enabled",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "field_service_media_items_tab",
+            "label": "Images / Videos",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_service_media_items_enabled",
+            "label": "Show Images / Videos",
+            "name": "sportshealing_service_media_items_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 0
+        },
+        {
+            "key": "field_service_media_items",
+            "label": "Image / Video Items",
+            "name": "sportshealing_service_media_items",
+            "type": "repeater",
+            "instructions": "Optional. Add standalone image/video gallery items below the main service detail section. Choose Image or Video per item; only the matching fields are used.",
+            "layout": "row",
+            "button_label": "Add Image/Video",
+            "sub_fields": [
+                {
+                    "key": "field_service_media_item_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum"
+                },
+                {
+                    "key": "field_service_media_item_media_type",
+                    "label": "Media Type",
+                    "name": "media_type",
+                    "type": "select",
+                    "instructions": "Choose Image to use the Image field. Choose Video to use the Video URL and Video Thumbnail fields.",
+                    "choices": {
+                        "image": "Image",
+                        "video": "Video"
+                    },
+                    "default_value": "image",
+                    "ui": 1,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_service_media_item_image",
+                    "label": "Image (used only when Media Type is Image)",
+                    "name": "image",
+                    "type": "image",
+                    "instructions": "Optional. Used only when Media Type is Image. Leave empty to use the theme gallery placeholder.",
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_service_media_item_media_type",
+                                "operator": "==",
+                                "value": "image"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "key": "field_service_media_item_video_image",
+                    "label": "Video Thumbnail (used only when Media Type is Video)",
+                    "name": "video_image",
+                    "type": "image",
+                    "instructions": "Optional. Used only when Media Type is Video. Leave empty to use the theme video placeholder.",
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_service_media_item_media_type",
+                                "operator": "==",
+                                "value": "video"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "key": "field_service_media_item_video_url",
+                    "label": "Video URL (used only when Media Type is Video)",
+                    "name": "video_url",
+                    "type": "url",
+                    "instructions": "Optional. Used only when Media Type is Video. If empty, the item falls back to an image-style placeholder instead of opening a video.",
+                    "default_value": "https://www.youtube.com/watch?v=Y-x0efG1seA",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_service_media_item_media_type",
+                                "operator": "==",
+                                "value": "video"
+                            }
+                        ]
+                    ]
+                }
+            ],
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_service_media_items_enabled",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "sh_service"
+            }
+        ]
+    ],
+    "active": true
+}

@@ -1,0 +1,205 @@
+{
+    "key": "group_sportshealing_template_contact",
+    "title": "Contact Template Content",
+    "fields": [
+        {
+            "key": "field_contact_section_breadcrumb_tab",
+            "label": "Breadcrumb",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_contact_section_breadcrumb",
+            "label": "Show Breadcrumb Section",
+            "name": "sportshealing_contact_breadcrumb_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_contact_section_breadcrumb_image",
+            "label": "Breadcrumb Image",
+            "name": "sportshealing_contact_breadcrumb_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_contact_section_contact_form_tab",
+            "label": "Contact Form",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_contact_section_contact_form",
+            "label": "Show Contact Form Section",
+            "name": "sportshealing_contact_contact_form_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_contact_section_contact_form_shortcode",
+            "label": "Contact Form 7 Shortcode",
+            "name": "sportshealing_contact_contact_form_shortcode",
+            "type": "text",
+            "instructions": "Paste the Contact Form 7 shortcode for this form, e.g. [contact-form-7 id=\"123\" title=\"Contact form\"]. The Contact Form 7 form markup should use the theme classes shown in the setup notes.",
+            "default_value": ""
+        },
+        {
+            "key": "field_contact_section_contact_form_eyebrow",
+            "label": "Contact Form Eyebrow",
+            "name": "sportshealing_contact_contact_form_eyebrow",
+            "type": "text",
+            "default_value": "Lorem Ipsum"
+        },
+        {
+            "key": "field_contact_section_contact_form_heading",
+            "label": "Contact Form Heading",
+            "name": "sportshealing_contact_contact_form_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_contact_section_contact_form_form_title",
+            "label": "Form Title",
+            "name": "sportshealing_contact_contact_form_form_title",
+            "type": "text",
+            "default_value": "Get In Touch"
+        },
+        {
+            "key": "field_contact_section_contact_form_items",
+            "label": "Contact Form Items",
+            "name": "sportshealing_contact_contact_form_items",
+            "type": "repeater",
+            "layout": "row",
+            "button_label": "Add Item",
+            "sub_fields": [
+                {
+                    "key": "field_contact_section_contact_form_item_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum"
+                },
+                {
+                    "key": "field_contact_section_contact_form_item_copy",
+                    "label": "Copy",
+                    "name": "copy",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                },
+                {
+                    "key": "field_contact_section_contact_form_item_icon",
+                    "label": "Font Awesome Icon",
+                    "name": "icon",
+                    "type": "select",
+                    "instructions": "Choose the Font Awesome icon used for this contact item.",
+                    "choices": {
+                        "fa-solid fa-phone-volume": "Phone",
+                        "fa-solid fa-envelope": "Email",
+                        "fa-solid fa-location-dot": "Location",
+                        "fa-solid fa-clock": "Opening Hours",
+                        "fa-solid fa-calendar-days": "Calendar",
+                        "fa-solid fa-circle-info": "Info"
+                    },
+                    "default_value": "fa-solid fa-phone-volume",
+                    "ui": 1,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_contact_section_contact_form_item_url",
+                    "label": "Link URL",
+                    "name": "url",
+                    "type": "text",
+                    "instructions": "Optional. Supports full URLs, mailto:email@example.com, and tel:+441234567890."
+                }
+            ]
+        },
+        {
+            "key": "field_contact_section_contact_form_follow_text",
+            "label": "Social Follow Text",
+            "name": "sportshealing_contact_contact_form_follow_text",
+            "type": "text",
+            "default_value": "Follow Us Today :"
+        },
+        {
+            "key": "field_contact_section_contact_form_social_links",
+            "label": "Social Links",
+            "name": "sportshealing_contact_contact_form_social_links",
+            "type": "repeater",
+            "layout": "row",
+            "button_label": "Add Social Link",
+            "instructions": "Add the social media icon and the URL for each social page. Only rows with a URL will show on the page.",
+            "sub_fields": [
+                {
+                    "key": "field_contact_section_contact_form_social_icon",
+                    "label": "Font Awesome Social Icon",
+                    "name": "icon",
+                    "type": "select",
+                    "instructions": "Choose the Font Awesome brand icon used for this social link.",
+                    "choices": {
+                        "fa-brands fa-facebook-f": "Facebook",
+                        "fa-brands fa-instagram": "Instagram",
+                        "fa-brands fa-x-twitter": "X / Twitter",
+                        "fa-brands fa-linkedin-in": "LinkedIn",
+                        "fa-brands fa-youtube": "YouTube",
+                        "fa-brands fa-tiktok": "TikTok",
+                        "fa-brands fa-pinterest-p": "Pinterest"
+                    },
+                    "default_value": "fa-brands fa-facebook-f",
+                    "ui": 1,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_contact_section_contact_form_social_url",
+                    "label": "Social Page URL",
+                    "name": "url",
+                    "type": "url",
+                    "instructions": "Paste the full URL for the social media page.",
+                    "default_value": ""
+                }
+            ]
+        },
+        {
+            "key": "field_contact_section_contact_info_tab",
+            "label": "Contact Info",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_contact_section_contact_info",
+            "label": "Show Contact Info Section",
+            "name": "sportshealing_contact_contact_info_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_contact_section_map_tab",
+            "label": "Map",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_contact_section_map",
+            "label": "Show Map Section",
+            "name": "sportshealing_contact_map_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "contact-template.php"
+            }
+        ]
+    ],
+    "active": true,
+    "modified": 1776943558
+}

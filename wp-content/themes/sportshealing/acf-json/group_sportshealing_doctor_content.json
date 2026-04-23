@@ -1,0 +1,212 @@
+{
+    "key": "group_sportshealing_doctor_content",
+    "title": "Doctor Detail Content",
+    "fields": [
+        {
+            "key": "field_doctor_tab_profile",
+            "label": "Profile",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_doctor_image_fallback",
+            "label": "Listing Image",
+            "name": "sportshealing_doctor_listing_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_doctor_detail_image",
+            "label": "Detail Image",
+            "name": "sportshealing_doctor_detail_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_doctor_role",
+            "label": "Doctor Role",
+            "name": "sportshealing_doctor_role",
+            "type": "text",
+            "default_value": "Lorem Ipsum Specialist"
+        },
+        {
+            "key": "field_doctor_biography_heading",
+            "label": "Biography Heading",
+            "name": "sportshealing_doctor_biography_heading",
+            "type": "text",
+            "default_value": "Biography"
+        },
+        {
+            "key": "field_doctor_info_list",
+            "label": "Doctor Info List",
+            "name": "sportshealing_doctor_info_list",
+            "type": "repeater",
+            "button_label": "Add Info Item",
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_doctor_info_label",
+                    "label": "Label",
+                    "name": "label",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum"
+                },
+                {
+                    "key": "field_doctor_info_value",
+                    "label": "Value",
+                    "name": "value",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum"
+                }
+            ]
+        },
+        {
+            "key": "field_doctor_social_links",
+            "label": "Social Links",
+            "name": "sportshealing_doctor_social_links",
+            "type": "repeater",
+            "button_label": "Add Social Link",
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_doctor_social_icon",
+                    "label": "Font Awesome Social Icon",
+                    "name": "icon",
+                    "type": "select",
+                    "default_value": "fa-brands fa-facebook-f",
+                    "instructions": "Choose the Font Awesome brand icon used for this social link.",
+                    "choices": {
+                        "fa-brands fa-facebook-f": "Facebook",
+                        "fa-brands fa-instagram": "Instagram",
+                        "fa-brands fa-x-twitter": "X / Twitter",
+                        "fa-brands fa-linkedin-in": "LinkedIn",
+                        "fa-brands fa-youtube": "YouTube",
+                        "fa-brands fa-tiktok": "TikTok",
+                        "fa-brands fa-pinterest-p": "Pinterest"
+                    },
+                    "ui": 1,
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_doctor_social_url",
+                    "label": "URL",
+                    "name": "url",
+                    "type": "url",
+                    "default_value": "#"
+                }
+            ]
+        },
+        {
+            "key": "field_doctor_tab_awards",
+            "label": "Awards & Hours",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_doctor_awards_heading",
+            "label": "Awards Heading",
+            "name": "sportshealing_doctor_awards_heading",
+            "type": "text",
+            "default_value": "Awards & Hours"
+        },
+        {
+            "key": "field_doctor_awards_intro",
+            "label": "Awards Intro",
+            "name": "sportshealing_doctor_awards_intro",
+            "type": "textarea",
+            "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "rows": 3
+        },
+        {
+            "key": "field_doctor_awards",
+            "label": "Awards",
+            "name": "sportshealing_doctor_awards",
+            "type": "repeater",
+            "button_label": "Add Award",
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_doctor_award_image",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "array",
+                    "preview_size": "thumbnail"
+                },
+                {
+                    "key": "field_doctor_award_label",
+                    "label": "Label",
+                    "name": "label",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum"
+                },
+                {
+                    "key": "field_doctor_award_source",
+                    "label": "Source",
+                    "name": "source",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum"
+                }
+            ]
+        },
+        {
+            "key": "field_doctor_tab_skills",
+            "label": "Skills",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_doctor_skills_heading",
+            "label": "Skills Heading",
+            "name": "sportshealing_doctor_skills_heading",
+            "type": "text",
+            "default_value": "My Skills"
+        },
+        {
+            "key": "field_doctor_skills_intro",
+            "label": "Skills Intro",
+            "name": "sportshealing_doctor_skills_intro",
+            "type": "textarea",
+            "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "rows": 3
+        },
+        {
+            "key": "field_doctor_skills",
+            "label": "Skills",
+            "name": "sportshealing_doctor_skills",
+            "type": "repeater",
+            "button_label": "Add Skill",
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_doctor_skill_label",
+                    "label": "Label",
+                    "name": "label",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum"
+                },
+                {
+                    "key": "field_doctor_skill_percent",
+                    "label": "Percent",
+                    "name": "percent",
+                    "type": "number",
+                    "default_value": 90,
+                    "min": 0,
+                    "max": 100
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "sh_doctor"
+            }
+        ]
+    ],
+    "active": true
+}

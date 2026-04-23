@@ -1,0 +1,182 @@
+{
+    "key": "group_sportshealing_portfolio_content",
+    "title": "Portfolio Detail Content",
+    "fields": [
+        {
+            "key": "field_portfolio_tab_media",
+            "label": "Media",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_portfolio_image_fallback",
+            "label": "Listing Image",
+            "name": "sportshealing_portfolio_listing_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_portfolio_detail_image",
+            "label": "Detail Image",
+            "name": "sportshealing_portfolio_detail_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_portfolio_tab_details",
+            "label": "Details",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_portfolio_category_text",
+            "label": "Category Text",
+            "name": "sportshealing_portfolio_category",
+            "type": "text",
+            "default_value": "Lorem Ipsum, Dolor Sit"
+        },
+        {
+            "key": "field_portfolio_project_information",
+            "label": "Project Information",
+            "name": "sportshealing_project_information",
+            "type": "repeater",
+            "button_label": "Add Information Row",
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_portfolio_project_info_icon",
+                    "label": "Icon Class",
+                    "name": "icon",
+                    "type": "text",
+                    "default_value": "fas fa-user"
+                },
+                {
+                    "key": "field_portfolio_project_info_label",
+                    "label": "Label",
+                    "name": "label",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum"
+                },
+                {
+                    "key": "field_portfolio_project_info_value",
+                    "label": "Value",
+                    "name": "value",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum"
+                }
+            ]
+        },
+        {
+            "key": "field_portfolio_tab_sidebar",
+            "label": "Sidebar",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_portfolio_brochures",
+            "label": "Brochure Downloads",
+            "name": "sportshealing_portfolio_brochures",
+            "type": "repeater",
+            "button_label": "Add Brochure",
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_portfolio_brochure_label",
+                    "label": "Label",
+                    "name": "label",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum PDF"
+                },
+                {
+                    "key": "field_portfolio_brochure_file",
+                    "label": "File",
+                    "name": "file",
+                    "type": "file",
+                    "return_format": "array"
+                }
+            ]
+        },
+        {
+            "key": "field_portfolio_help_heading",
+            "label": "Need Help Heading",
+            "name": "sportshealing_portfolio_help_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor"
+        },
+        {
+            "key": "field_portfolio_help_copy",
+            "label": "Need Help Copy",
+            "name": "sportshealing_portfolio_help_copy",
+            "type": "textarea",
+            "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "rows": 3
+        },
+        {
+            "key": "field_portfolio_help_phone",
+            "label": "Need Help Phone",
+            "name": "sportshealing_portfolio_help_phone",
+            "type": "text",
+            "default_value": "+1 234 467 88"
+        },
+        {
+            "key": "field_portfolio_help_email",
+            "label": "Need Help Email",
+            "name": "sportshealing_portfolio_help_email",
+            "type": "email",
+            "default_value": "info@example.com"
+        },
+        {
+            "key": "field_portfolio_tab_related",
+            "label": "Related",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_portfolio_related_eyebrow",
+            "label": "Related Eyebrow",
+            "name": "sportshealing_portfolio_related_eyebrow",
+            "type": "text",
+            "default_value": "Related Portfolio"
+        },
+        {
+            "key": "field_portfolio_related_heading",
+            "label": "Related Heading",
+            "name": "sportshealing_portfolio_related_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_portfolio_related_items",
+            "label": "Related Portfolio Items",
+            "name": "sportshealing_portfolio_related_items",
+            "type": "repeater",
+            "button_label": "Add Portfolio Item",
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_portfolio_related_item",
+                    "label": "Portfolio Item",
+                    "name": "portfolio_item",
+                    "type": "post_object",
+                    "post_type": [
+                        "sh_portfolio"
+                    ],
+                    "return_format": "id",
+                    "ui": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "sh_portfolio"
+            }
+        ]
+    ],
+    "active": true
+}

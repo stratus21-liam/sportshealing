@@ -1,0 +1,146 @@
+{
+    "key": "group_sportshealing_template_video_gallery",
+    "title": "Video Gallery Template Content",
+    "fields": [
+        {
+            "key": "field_video_gallery_section_breadcrumb_tab",
+            "label": "Breadcrumb",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_video_gallery_section_breadcrumb",
+            "label": "Show Breadcrumb Section",
+            "name": "sportshealing_video_gallery_breadcrumb_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_video_gallery_section_breadcrumb_image",
+            "label": "Breadcrumb Image",
+            "name": "sportshealing_video_gallery_breadcrumb_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_video_gallery_section_video_gallery_tab",
+            "label": "Video Gallery",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_video_gallery_section_video_gallery",
+            "label": "Show Video Gallery Section",
+            "name": "sportshealing_video_gallery_video_gallery_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_video_gallery_section_video_gallery_items_per_page",
+            "label": "Items Per Page",
+            "name": "sportshealing_video_gallery_video_gallery_items_per_page",
+            "type": "number",
+            "instructions": "How many videos to show per gallery page. Default is 12.",
+            "default_value": 12,
+            "min": 1,
+            "step": 1
+        },
+        {
+            "key": "field_video_gallery_section_video_gallery_items",
+            "label": "Video Gallery Items",
+            "name": "sportshealing_video_gallery_video_gallery_items",
+            "type": "repeater",
+            "layout": "row",
+            "button_label": "Add Item",
+            "sub_fields": [
+                {
+                    "key": "field_video_gallery_section_video_gallery_item_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum"
+                },
+                {
+                    "key": "field_video_gallery_section_video_gallery_item_image",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "array",
+                    "preview_size": "thumbnail"
+                },
+                {
+                    "key": "field_video_gallery_section_video_gallery_item_url",
+                    "label": "YouTube Watch URL",
+                    "name": "url",
+                    "type": "url",
+                    "instructions": "Paste the full YouTube watch link, e.g. https://www.youtube.com/watch?v=Y-x0efG1seA.",
+                    "default_value": "https://www.youtube.com/watch?v=Y-x0efG1seA"
+                }
+            ]
+        },
+        {
+            "key": "field_video_gallery_section_cta_tab",
+            "label": "Cta",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_video_gallery_section_cta",
+            "label": "Show Cta Section",
+            "name": "sportshealing_video_gallery_cta_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_video_gallery_section_cta_heading",
+            "label": "Cta Heading",
+            "name": "sportshealing_video_gallery_cta_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_video_gallery_section_cta_copy",
+            "label": "Cta Copy",
+            "name": "sportshealing_video_gallery_cta_copy",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>"
+        },
+        {
+            "key": "field_video_gallery_section_cta_button_label",
+            "label": "CTA Button Text",
+            "name": "sportshealing_video_gallery_cta_button_label",
+            "type": "text",
+            "default_value": "Book Appointment"
+        },
+        {
+            "key": "field_video_gallery_section_cta_button_page",
+            "label": "CTA Button Page",
+            "name": "sportshealing_video_gallery_cta_button_page",
+            "type": "post_object",
+            "post_type": [
+                "page"
+            ],
+            "return_format": "id",
+            "ui": 1,
+            "allow_null": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "video-gallery-template.php"
+            }
+        ]
+    ],
+    "active": true,
+    "modified": 1776943362
+}

@@ -1,0 +1,475 @@
+{
+    "key": "group_sportshealing_template_about",
+    "title": "About Template Content",
+    "fields": [
+        {
+            "key": "field_about_section_breadcrumb_tab",
+            "label": "Breadcrumb",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_about_section_breadcrumb",
+            "label": "Show Breadcrumb Section",
+            "name": "sportshealing_about_breadcrumb_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_about_section_breadcrumb_image",
+            "label": "Breadcrumb Image",
+            "name": "sportshealing_about_breadcrumb_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_about_section_about_tab",
+            "label": "About",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_about_section_about",
+            "label": "Show About Section",
+            "name": "sportshealing_about_about_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_about_section_about_eyebrow",
+            "label": "About Eyebrow",
+            "name": "sportshealing_about_about_eyebrow",
+            "type": "text",
+            "default_value": "Lorem Ipsum"
+        },
+        {
+            "key": "field_about_section_about_heading",
+            "label": "About Heading",
+            "name": "sportshealing_about_about_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_about_section_about_copy",
+            "label": "About Copy",
+            "name": "sportshealing_about_about_copy",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>"
+        },
+        {
+            "key": "field_about_section_about_paragraphs",
+            "label": "Additional Paragraphs",
+            "name": "sportshealing_about_about_paragraphs",
+            "type": "repeater",
+            "layout": "row",
+            "button_label": "Add Paragraph",
+            "sub_fields": [
+                {
+                    "key": "field_about_section_about_paragraph_copy",
+                    "label": "Copy",
+                    "name": "copy",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Lorem ipsum dolor sit amet."
+                }
+            ]
+        },
+        {
+            "key": "field_about_section_about_items",
+            "label": "Feature Items",
+            "name": "sportshealing_about_about_items",
+            "type": "repeater",
+            "layout": "row",
+            "button_label": "Add Feature",
+            "sub_fields": [
+                {
+                    "key": "field_about_section_about_item_image",
+                    "label": "Icon",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "array",
+                    "preview_size": "thumbnail"
+                },
+                {
+                    "key": "field_about_section_about_item_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum"
+                },
+                {
+                    "key": "field_about_section_about_item_copy",
+                    "label": "Copy",
+                    "name": "copy",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Lorem ipsum dolor sit amet."
+                }
+            ]
+        },
+        {
+            "key": "field_about_section_doctor_tab",
+            "label": "Doctor",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_about_section_doctor",
+            "label": "Show Doctor Section",
+            "name": "sportshealing_about_doctor_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_about_section_doctor_eyebrow",
+            "label": "Doctor Eyebrow",
+            "name": "sportshealing_about_doctor_eyebrow",
+            "type": "text",
+            "default_value": "Lorem Ipsum"
+        },
+        {
+            "key": "field_about_section_doctor_heading",
+            "label": "Doctor Heading",
+            "name": "sportshealing_about_doctor_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_about_section_doctor_copy",
+            "label": "Doctor Copy",
+            "name": "sportshealing_about_doctor_copy",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>"
+        },
+        {
+            "key": "field_about_section_doctor_posts",
+            "label": "Doctor Posts",
+            "name": "sportshealing_about_doctor_posts",
+            "type": "post_object",
+            "post_type": [
+                "sh_doctor"
+            ],
+            "return_format": "object",
+            "multiple": 1,
+            "ui": 1,
+            "instructions": "Select the posts to show. If none are selected, latest published posts are used."
+        },
+        {
+            "key": "field_about_section_counter_tab",
+            "label": "Counter",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_about_section_counter",
+            "label": "Show Counter Section",
+            "name": "sportshealing_about_counter_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_about_section_counter_items",
+            "label": "Counter Items",
+            "name": "sportshealing_about_counter_items",
+            "type": "repeater",
+            "layout": "row",
+            "button_label": "Add Counter Item",
+            "sub_fields": [
+                {
+                    "key": "field_about_section_counter_item_title",
+                    "label": "Label",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum"
+                },
+                {
+                    "key": "field_about_section_counter_item_value",
+                    "label": "Number",
+                    "name": "value",
+                    "type": "text",
+                    "default_value": "90"
+                },
+                {
+                    "key": "field_about_section_counter_item_suffix",
+                    "label": "Suffix",
+                    "name": "suffix",
+                    "type": "text",
+                    "default_value": "+"
+                }
+            ]
+        },
+        {
+            "key": "field_about_section_testimonials_tab",
+            "label": "Testimonials",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_about_section_testimonials",
+            "label": "Show Testimonials Section",
+            "name": "sportshealing_about_testimonials_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_about_section_testimonials_eyebrow",
+            "label": "Testimonials Eyebrow",
+            "name": "sportshealing_about_testimonials_eyebrow",
+            "type": "text",
+            "default_value": "Lorem Ipsum"
+        },
+        {
+            "key": "field_about_section_testimonials_heading",
+            "label": "Testimonials Heading",
+            "name": "sportshealing_about_testimonials_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_about_section_testimonials_copy",
+            "label": "Testimonials Copy",
+            "name": "sportshealing_about_testimonials_copy",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>"
+        },
+        {
+            "key": "field_about_section_testimonials_image",
+            "label": "Testimonials Image",
+            "name": "sportshealing_about_testimonials_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_about_section_testimonials_items",
+            "label": "Testimonials Items",
+            "name": "sportshealing_about_testimonials_items",
+            "type": "repeater",
+            "layout": "row",
+            "button_label": "Add Item",
+            "sub_fields": [
+                {
+                    "key": "field_about_section_testimonials_item_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum"
+                },
+                {
+                    "key": "field_about_section_testimonials_item_copy",
+                    "label": "Copy",
+                    "name": "copy",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                },
+                {
+                    "key": "field_about_section_testimonials_item_image",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "array",
+                    "preview_size": "thumbnail"
+                },
+                {
+                    "key": "field_about_section_testimonials_item_url",
+                    "label": "URL",
+                    "name": "url",
+                    "type": "url"
+                },
+                {
+                    "key": "field_about_testimonials_items_item_quote_image",
+                    "label": "Quote Icon",
+                    "name": "quote_image",
+                    "type": "image",
+                    "return_format": "array",
+                    "preview_size": "thumbnail"
+                },
+                {
+                    "key": "field_about_testimonials_items_item_author_name",
+                    "label": "Author Name",
+                    "name": "author_name",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum"
+                },
+                {
+                    "key": "field_about_testimonials_items_item_author_role",
+                    "label": "Author Role",
+                    "name": "author_role",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum"
+                }
+            ]
+        },
+        {
+            "key": "field_about_section_faq_tab",
+            "label": "Faq",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_about_section_faq",
+            "label": "Show Faq Section",
+            "name": "sportshealing_about_faq_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_about_section_faq_eyebrow",
+            "label": "Faq Eyebrow",
+            "name": "sportshealing_about_faq_eyebrow",
+            "type": "text",
+            "default_value": "Lorem Ipsum"
+        },
+        {
+            "key": "field_about_section_faq_heading",
+            "label": "Faq Heading",
+            "name": "sportshealing_about_faq_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_about_section_faq_copy",
+            "label": "Faq Copy",
+            "name": "sportshealing_about_faq_copy",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>"
+        },
+        {
+            "key": "field_about_section_faq_image",
+            "label": "Faq Image",
+            "name": "sportshealing_about_faq_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_about_section_faq_items",
+            "label": "Faq Items",
+            "name": "sportshealing_about_faq_items",
+            "type": "repeater",
+            "layout": "row",
+            "button_label": "Add Item",
+            "sub_fields": [
+                {
+                    "key": "field_about_section_faq_item_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum"
+                },
+                {
+                    "key": "field_about_section_faq_item_copy",
+                    "label": "Copy",
+                    "name": "copy",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                },
+                {
+                    "key": "field_about_section_faq_item_image",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "array",
+                    "preview_size": "thumbnail"
+                },
+                {
+                    "key": "field_about_section_faq_item_url",
+                    "label": "URL",
+                    "name": "url",
+                    "type": "url"
+                }
+            ]
+        },
+        {
+            "key": "field_about_section_partners_tab",
+            "label": "Partners",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_about_section_partners",
+            "label": "Show Partners Section",
+            "name": "sportshealing_about_partners_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_about_section_partners_eyebrow",
+            "label": "Partners Eyebrow",
+            "name": "sportshealing_about_partners_eyebrow",
+            "type": "text",
+            "default_value": "Lorem Ipsum"
+        },
+        {
+            "key": "field_about_section_partners_heading",
+            "label": "Partners Heading",
+            "name": "sportshealing_about_partners_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_about_section_partners_items",
+            "label": "Partners Items",
+            "name": "sportshealing_about_partners_items",
+            "type": "repeater",
+            "layout": "row",
+            "button_label": "Add Item",
+            "sub_fields": [
+                {
+                    "key": "field_about_section_partners_item_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum"
+                },
+                {
+                    "key": "field_about_section_partners_item_image",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "array",
+                    "preview_size": "thumbnail"
+                },
+                {
+                    "key": "field_about_section_partners_item_url",
+                    "label": "URL",
+                    "name": "url",
+                    "type": "url"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "about-template.php"
+            }
+        ]
+    ],
+    "active": true,
+    "modified": 1776943362
+}

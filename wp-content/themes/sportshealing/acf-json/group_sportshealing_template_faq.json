@@ -1,0 +1,145 @@
+{
+    "key": "group_sportshealing_template_faq",
+    "title": "FAQ Template Content",
+    "fields": [
+        {
+            "key": "field_faq_section_breadcrumb_tab",
+            "label": "Breadcrumb",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_faq_section_breadcrumb",
+            "label": "Show Breadcrumb Section",
+            "name": "sportshealing_faq_breadcrumb_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_faq_section_breadcrumb_image",
+            "label": "Breadcrumb Image",
+            "name": "sportshealing_faq_breadcrumb_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_faq_section_faq_tab",
+            "label": "Faq",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_faq_section_faq",
+            "label": "Show Faq Section",
+            "name": "sportshealing_faq_faq_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_faq_section_faq_eyebrow",
+            "label": "Faq Eyebrow",
+            "name": "sportshealing_faq_faq_eyebrow",
+            "type": "text",
+            "default_value": "Lorem Ipsum"
+        },
+        {
+            "key": "field_faq_section_faq_heading",
+            "label": "Faq Heading",
+            "name": "sportshealing_faq_faq_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_faq_section_faq_items",
+            "label": "Faq Items",
+            "name": "sportshealing_faq_faq_items",
+            "type": "repeater",
+            "layout": "row",
+            "button_label": "Add Item",
+            "sub_fields": [
+                {
+                    "key": "field_faq_section_faq_item_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum"
+                },
+                {
+                    "key": "field_faq_section_faq_item_copy",
+                    "label": "Copy",
+                    "name": "copy",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                },
+                {
+                    "key": "field_faq_section_faq_item_image",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "array",
+                    "preview_size": "thumbnail"
+                },
+                {
+                    "key": "field_faq_section_faq_item_url",
+                    "label": "URL",
+                    "name": "url",
+                    "type": "url"
+                }
+            ]
+        },
+        {
+            "key": "field_faq_section_cta_tab",
+            "label": "Cta",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_faq_section_cta",
+            "label": "Show Cta Section",
+            "name": "sportshealing_faq_cta_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_faq_section_cta_heading",
+            "label": "Cta Heading",
+            "name": "sportshealing_faq_cta_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_faq_section_cta_copy",
+            "label": "Cta Copy",
+            "name": "sportshealing_faq_cta_copy",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>"
+        },
+        {
+            "key": "field_faq_section_cta_image",
+            "label": "Cta Image",
+            "name": "sportshealing_faq_cta_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "faq-template.php"
+            }
+        ]
+    ],
+    "active": true,
+    "modified": 1776943362
+}

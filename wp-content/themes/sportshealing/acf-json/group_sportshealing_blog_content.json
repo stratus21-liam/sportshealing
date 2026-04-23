@@ -1,0 +1,23 @@
+{
+    "key": "group_sportshealing_blog_content",
+    "title": "Blog Detail Content",
+    "fields": [
+        {
+            "key": "field_blog_image_fallback",
+            "label": "Theme Image Fallback",
+            "name": "sportshealing_blog_listing_image",
+            "type": "text",
+            "default_value": "assets/images/blog/blog-1.jpg"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "active": true
+}

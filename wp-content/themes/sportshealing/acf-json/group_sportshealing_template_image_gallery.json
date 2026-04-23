@@ -1,0 +1,138 @@
+{
+    "key": "group_sportshealing_template_image_gallery",
+    "title": "Image Gallery Template Content",
+    "fields": [
+        {
+            "key": "field_image_gallery_section_breadcrumb_tab",
+            "label": "Breadcrumb",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_image_gallery_section_breadcrumb",
+            "label": "Show Breadcrumb Section",
+            "name": "sportshealing_image_gallery_breadcrumb_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_image_gallery_section_breadcrumb_image",
+            "label": "Breadcrumb Image",
+            "name": "sportshealing_image_gallery_breadcrumb_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_image_gallery_section_gallery_tab",
+            "label": "Gallery",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_image_gallery_section_gallery",
+            "label": "Show Gallery Section",
+            "name": "sportshealing_image_gallery_gallery_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_image_gallery_section_gallery_items_per_page",
+            "label": "Items Per Page",
+            "name": "sportshealing_image_gallery_gallery_items_per_page",
+            "type": "number",
+            "instructions": "How many images to show per gallery page. Default is 12.",
+            "default_value": 12,
+            "min": 1,
+            "step": 1
+        },
+        {
+            "key": "field_image_gallery_section_gallery_items",
+            "label": "Gallery Items",
+            "name": "sportshealing_image_gallery_gallery_items",
+            "type": "repeater",
+            "layout": "row",
+            "button_label": "Add Item",
+            "sub_fields": [
+                {
+                    "key": "field_image_gallery_section_gallery_item_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum"
+                },
+                {
+                    "key": "field_image_gallery_section_gallery_item_image",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "array",
+                    "preview_size": "thumbnail"
+                }
+            ]
+        },
+        {
+            "key": "field_image_gallery_section_cta_tab",
+            "label": "Cta",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_image_gallery_section_cta",
+            "label": "Show Cta Section",
+            "name": "sportshealing_image_gallery_cta_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_image_gallery_section_cta_heading",
+            "label": "Cta Heading",
+            "name": "sportshealing_image_gallery_cta_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_image_gallery_section_cta_copy",
+            "label": "Cta Copy",
+            "name": "sportshealing_image_gallery_cta_copy",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>"
+        },
+        {
+            "key": "field_image_gallery_section_cta_button_label",
+            "label": "CTA Button Text",
+            "name": "sportshealing_image_gallery_cta_button_label",
+            "type": "text",
+            "default_value": "Book Appointment"
+        },
+        {
+            "key": "field_image_gallery_section_cta_button_page",
+            "label": "CTA Button Page",
+            "name": "sportshealing_image_gallery_cta_button_page",
+            "type": "post_object",
+            "post_type": [
+                "page"
+            ],
+            "return_format": "id",
+            "ui": 1,
+            "allow_null": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "image-gallery-template.php"
+            }
+        ]
+    ],
+    "active": true,
+    "modified": 1776943362
+}

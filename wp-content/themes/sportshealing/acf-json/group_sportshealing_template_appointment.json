@@ -1,0 +1,137 @@
+{
+    "key": "group_sportshealing_template_appointment",
+    "title": "Appointment Template Content",
+    "fields": [
+        {
+            "key": "field_appointment_section_breadcrumb_tab",
+            "label": "Breadcrumb",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_appointment_section_breadcrumb",
+            "label": "Show Breadcrumb Section",
+            "name": "sportshealing_appointment_breadcrumb_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_appointment_section_breadcrumb_image",
+            "label": "Breadcrumb Image",
+            "name": "sportshealing_appointment_breadcrumb_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_appointment_section_appointment_tab",
+            "label": "Appointment",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_appointment_section_appointment",
+            "label": "Show Appointment Section",
+            "name": "sportshealing_appointment_appointment_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_appointment_section_appointment_eyebrow",
+            "label": "Appointment Eyebrow",
+            "name": "sportshealing_appointment_appointment_eyebrow",
+            "type": "text",
+            "default_value": "Lorem Ipsum"
+        },
+        {
+            "key": "field_appointment_section_appointment_heading",
+            "label": "Appointment Heading",
+            "name": "sportshealing_appointment_appointment_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_appointment_section_appointment_form_shortcode",
+            "label": "Form Shortcode",
+            "name": "sportshealing_appointment_appointment_form_shortcode",
+            "type": "text",
+            "default_value": ""
+        },
+        {
+            "key": "field_appointment_section_appointment_shape_1",
+            "label": "Shape 1",
+            "name": "sportshealing_appointment_appointment_shape_1",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_appointment_section_appointment_large_image",
+            "label": "Large Image",
+            "name": "sportshealing_appointment_appointment_large_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_appointment_section_appointment_small_image",
+            "label": "Small Image",
+            "name": "sportshealing_appointment_appointment_small_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_appointment_section_cta_tab",
+            "label": "Cta",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_appointment_section_cta",
+            "label": "Show Cta Section",
+            "name": "sportshealing_appointment_cta_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_appointment_section_cta_heading",
+            "label": "Cta Heading",
+            "name": "sportshealing_appointment_cta_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_appointment_section_cta_copy",
+            "label": "Cta Copy",
+            "name": "sportshealing_appointment_cta_copy",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>"
+        },
+        {
+            "key": "field_appointment_section_cta_image",
+            "label": "Cta Image",
+            "name": "sportshealing_appointment_cta_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "appointment-template.php"
+            }
+        ]
+    ],
+    "active": true,
+    "modified": 1776943362
+}

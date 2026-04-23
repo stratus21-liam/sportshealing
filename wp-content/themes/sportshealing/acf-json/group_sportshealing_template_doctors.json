@@ -1,0 +1,66 @@
+{
+    "key": "group_sportshealing_template_doctors",
+    "title": "Doctors Template Content",
+    "fields": [
+        {
+            "key": "field_doctors_heading",
+            "label": "Heading",
+            "name": "sportshealing_page_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_doctors_section_breadcrumb_tab",
+            "label": "Breadcrumb",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_doctors_section_breadcrumb",
+            "label": "Show Breadcrumb Section",
+            "name": "sportshealing_doctors_breadcrumb_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_doctors_section_doctors_tab",
+            "label": "Doctors",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_doctors_section_doctors",
+            "label": "Show Doctors Section",
+            "name": "sportshealing_doctors_doctors_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_doctors_section_cta_tab",
+            "label": "Cta",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_doctors_section_cta",
+            "label": "Show Cta Section",
+            "name": "sportshealing_doctors_cta_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "doctor-listing-template.php"
+            }
+        ]
+    ],
+    "active": true,
+    "modified": 1776943362
+}

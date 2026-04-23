@@ -1,0 +1,24 @@
+{
+    "key": "group_sportshealing_template_service_parents",
+    "title": "Service Parent Listing Template Content",
+    "fields": [
+        {
+            "key": "field_service_parents_heading",
+            "label": "Heading",
+            "name": "sportshealing_page_heading",
+            "type": "text",
+            "default_value": "Treatments"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "services-parent-listing-template.php"
+            }
+        ]
+    ],
+    "active": true,
+    "modified": 1776943362
+}

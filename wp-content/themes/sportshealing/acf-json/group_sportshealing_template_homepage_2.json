@@ -1,0 +1,1008 @@
+{
+    "key": "group_sportshealing_template_homepage_2",
+    "title": "Homepage 2 Template Content",
+    "fields": [
+        {
+            "key": "field_homepage_2_section_hero_tab",
+            "label": "Hero",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_homepage_2_section_hero",
+            "label": "Show Hero Section",
+            "name": "sportshealing_homepage_2_hero_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_homepage_2_section_hero_eyebrow",
+            "label": "Hero Eyebrow",
+            "name": "sportshealing_homepage_2_hero_eyebrow",
+            "type": "text",
+            "default_value": "Lorem Ipsum"
+        },
+        {
+            "key": "field_homepage_2_section_hero_heading",
+            "label": "Hero Heading",
+            "name": "sportshealing_homepage_2_hero_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_homepage_2_section_hero_copy",
+            "label": "Hero Copy",
+            "name": "sportshealing_homepage_2_hero_copy",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>"
+        },
+        {
+            "key": "field_homepage_2_section_hero_image",
+            "label": "Hero Image",
+            "name": "sportshealing_homepage_2_hero_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_homepage_2_section_hero_content_shape",
+            "label": "Content Shape",
+            "name": "sportshealing_homepage_2_hero_content_shape",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_homepage_2_section_hero_round_image",
+            "label": "Round Button Image",
+            "name": "sportshealing_homepage_2_hero_round_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_homepage_2_section_hero_round_button_page",
+            "label": "Round Button Page",
+            "name": "sportshealing_homepage_2_hero_round_button_page",
+            "type": "post_object",
+            "post_type": [
+                "page"
+            ],
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_homepage_2_section_hero_primary_button_label",
+            "label": "Primary Button Label",
+            "name": "sportshealing_homepage_2_hero_primary_button_label",
+            "type": "text",
+            "default_value": "Book Appointment"
+        },
+        {
+            "key": "field_homepage_2_section_hero_primary_button_page",
+            "label": "Primary Button Page",
+            "name": "sportshealing_homepage_2_hero_primary_button_page",
+            "type": "post_object",
+            "post_type": [
+                "page"
+            ],
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_homepage_2_section_hero_secondary_button_label",
+            "label": "Secondary Button Label",
+            "name": "sportshealing_homepage_2_hero_secondary_button_label",
+            "type": "text",
+            "default_value": "Our Services"
+        },
+        {
+            "key": "field_homepage_2_section_hero_secondary_button_page",
+            "label": "Secondary Button Page",
+            "name": "sportshealing_homepage_2_hero_secondary_button_page",
+            "type": "post_object",
+            "post_type": [
+                "page"
+            ],
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_homepage_2_section_about_tab",
+            "label": "About",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_homepage_2_section_about",
+            "label": "Show About Section",
+            "name": "sportshealing_homepage_2_about_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_homepage_2_section_about_eyebrow",
+            "label": "About Eyebrow",
+            "name": "sportshealing_homepage_2_about_eyebrow",
+            "type": "text",
+            "default_value": "Lorem Ipsum"
+        },
+        {
+            "key": "field_homepage_2_section_about_heading",
+            "label": "About Heading",
+            "name": "sportshealing_homepage_2_about_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_homepage_2_section_about_copy",
+            "label": "About Copy",
+            "name": "sportshealing_homepage_2_about_copy",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>"
+        },
+        {
+            "key": "field_homepage_2_section_about_sportshealing_homepage_2_about_shape_1",
+            "label": "Shape 1",
+            "name": "sportshealing_homepage_2_about_shape_1",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_homepage_2_section_about_sportshealing_homepage_2_about_shape_2",
+            "label": "Shape 2",
+            "name": "sportshealing_homepage_2_about_shape_2",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_homepage_2_section_about_sportshealing_homepage_2_about_top_image",
+            "label": "Top Image",
+            "name": "sportshealing_homepage_2_about_top_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_homepage_2_section_about_sportshealing_homepage_2_about_bottom_image",
+            "label": "Bottom Image",
+            "name": "sportshealing_homepage_2_about_bottom_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_homepage_2_section_about_sportshealing_homepage_2_about_button_label",
+            "label": "Button Label",
+            "name": "sportshealing_homepage_2_about_button_label",
+            "type": "text",
+            "default_value": "More About"
+        },
+        {
+            "key": "field_homepage_2_section_about_sportshealing_homepage_2_about_button_page",
+            "label": "Button Page",
+            "name": "sportshealing_homepage_2_about_button_page",
+            "type": "post_object",
+            "post_type": [
+                "page"
+            ],
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_homepage_2_section_about_sportshealing_homepage_2_about_checklist_items",
+            "label": "Checklist Items",
+            "name": "sportshealing_homepage_2_about_checklist_items",
+            "type": "repeater",
+            "layout": "row",
+            "button_label": "Add Checklist Item",
+            "sub_fields": [
+                {
+                    "key": "field_homepage_2_section_about_checklist_item_text",
+                    "label": "Item",
+                    "name": "text",
+                    "type": "text",
+                    "default_value": "Comprehensive Care Services"
+                }
+            ]
+        },
+        {
+            "key": "field_homepage_2_section_about_sportshealing_homepage_2_about_contact_label",
+            "label": "Contact Label",
+            "name": "sportshealing_homepage_2_about_contact_label",
+            "type": "text",
+            "default_value": "Need help? Call us"
+        },
+        {
+            "key": "field_homepage_2_section_about_sportshealing_homepage_2_about_contact_phone",
+            "label": "Contact Phone Number",
+            "name": "sportshealing_homepage_2_about_contact_phone",
+            "type": "text",
+            "default_value": "+1 234 467 88"
+        },
+        {
+            "key": "field_homepage_2_section_about_sportshealing_homepage_2_about_stat_icon",
+            "label": "Statistic Icon",
+            "name": "sportshealing_homepage_2_about_stat_icon",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "thumbnail"
+        },
+        {
+            "key": "field_homepage_2_section_about_sportshealing_homepage_2_about_stat_label",
+            "label": "Statistic Label",
+            "name": "sportshealing_homepage_2_about_stat_label",
+            "type": "text",
+            "default_value": "Years of Experience"
+        },
+        {
+            "key": "field_homepage_2_section_about_sportshealing_homepage_2_about_stat_value",
+            "label": "Statistic Value",
+            "name": "sportshealing_homepage_2_about_stat_value",
+            "type": "text",
+            "default_value": "25+"
+        },
+        {
+            "key": "field_homepage_2_section_services_tab",
+            "label": "Services",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_homepage_2_section_services",
+            "label": "Show Services Section",
+            "name": "sportshealing_homepage_2_services_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_homepage_2_section_services_eyebrow",
+            "label": "Services Eyebrow",
+            "name": "sportshealing_homepage_2_services_eyebrow",
+            "type": "text",
+            "default_value": "Lorem Ipsum"
+        },
+        {
+            "key": "field_homepage_2_section_services_heading",
+            "label": "Services Heading",
+            "name": "sportshealing_homepage_2_services_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_homepage_2_section_services_copy",
+            "label": "Services Copy",
+            "name": "sportshealing_homepage_2_services_copy",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>"
+        },
+        {
+            "key": "field_homepage_2_section_services_shape_1",
+            "label": "Shape 1",
+            "name": "sportshealing_homepage_2_services_shape_1",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_homepage_2_section_services_posts",
+            "label": "Service Posts",
+            "name": "sportshealing_homepage_2_services_posts",
+            "type": "post_object",
+            "post_type": [
+                "sh_service"
+            ],
+            "return_format": "object",
+            "multiple": 1,
+            "ui": 1,
+            "instructions": "Select the posts to show. If none are selected, latest published posts are used."
+        },
+        {
+            "key": "field_homepage_2_section_services_button_label",
+            "label": "Button Label",
+            "name": "sportshealing_homepage_2_services_button_label",
+            "type": "text",
+            "default_value": "Browse All Services"
+        },
+        {
+            "key": "field_homepage_2_section_services_button_page",
+            "label": "Button Page",
+            "name": "sportshealing_homepage_2_services_button_page",
+            "type": "post_object",
+            "post_type": [
+                "page"
+            ],
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_homepage_2_section_results_tab",
+            "label": "Results",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_homepage_2_section_results",
+            "label": "Show Results Section",
+            "name": "sportshealing_homepage_2_results_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_homepage_2_section_results_eyebrow",
+            "label": "Results Eyebrow",
+            "name": "sportshealing_homepage_2_results_eyebrow",
+            "type": "text",
+            "default_value": "Lorem Ipsum"
+        },
+        {
+            "key": "field_homepage_2_section_results_heading",
+            "label": "Results Heading",
+            "name": "sportshealing_homepage_2_results_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_homepage_2_section_results_before_image",
+            "label": "Before Image",
+            "name": "sportshealing_homepage_2_results_before_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_homepage_2_section_results_after_image",
+            "label": "After Image",
+            "name": "sportshealing_homepage_2_results_after_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_homepage_2_section_appointment_tab",
+            "label": "Appointment",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_homepage_2_section_appointment",
+            "label": "Show Appointment Section",
+            "name": "sportshealing_homepage_2_appointment_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_homepage_2_section_appointment_eyebrow",
+            "label": "Appointment Eyebrow",
+            "name": "sportshealing_homepage_2_appointment_eyebrow",
+            "type": "text",
+            "default_value": "Lorem Ipsum"
+        },
+        {
+            "key": "field_homepage_2_section_appointment_heading",
+            "label": "Appointment Heading",
+            "name": "sportshealing_homepage_2_appointment_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_homepage_2_section_appointment_items",
+            "label": "Process Items",
+            "name": "sportshealing_homepage_2_appointment_items",
+            "type": "repeater",
+            "layout": "row",
+            "button_label": "Add Process Item",
+            "sub_fields": [
+                {
+                    "key": "field_homepage_2_section_appointment_item_image",
+                    "label": "Icon",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "array",
+                    "preview_size": "thumbnail"
+                },
+                {
+                    "key": "field_homepage_2_section_appointment_item_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum"
+                },
+                {
+                    "key": "field_homepage_2_section_appointment_item_copy",
+                    "label": "Copy",
+                    "name": "copy",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Lorem ipsum dolor sit amet."
+                }
+            ]
+        },
+        {
+            "key": "field_homepage_2_section_appointment_form_eyebrow",
+            "label": "Form Eyebrow",
+            "name": "sportshealing_homepage_2_appointment_form_eyebrow",
+            "type": "text",
+            "default_value": "Appointment"
+        },
+        {
+            "key": "field_homepage_2_section_appointment_form_title",
+            "label": "Form Title",
+            "name": "sportshealing_homepage_2_appointment_form_title",
+            "type": "text",
+            "default_value": "Book Appointment"
+        },
+        {
+            "key": "field_homepage_2_section_appointment_form_shortcode",
+            "label": "Form Shortcode",
+            "name": "sportshealing_homepage_2_appointment_form_shortcode",
+            "type": "text",
+            "default_value": ""
+        },
+        {
+            "key": "field_homepage_2_section_testimonials_tab",
+            "label": "Testimonials",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_homepage_2_section_testimonials",
+            "label": "Show Testimonials Section",
+            "name": "sportshealing_homepage_2_testimonials_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_homepage_2_section_testimonials_eyebrow",
+            "label": "Testimonials Eyebrow",
+            "name": "sportshealing_homepage_2_testimonials_eyebrow",
+            "type": "text",
+            "default_value": "Lorem Ipsum"
+        },
+        {
+            "key": "field_homepage_2_section_testimonials_heading",
+            "label": "Testimonials Heading",
+            "name": "sportshealing_homepage_2_testimonials_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_homepage_2_section_testimonials_copy",
+            "label": "Testimonials Copy",
+            "name": "sportshealing_homepage_2_testimonials_copy",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>"
+        },
+        {
+            "key": "field_homepage_2_section_testimonials_image",
+            "label": "Testimonials Image",
+            "name": "sportshealing_homepage_2_testimonials_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_homepage_2_section_testimonials_items",
+            "label": "Testimonials Items",
+            "name": "sportshealing_homepage_2_testimonials_items",
+            "type": "repeater",
+            "layout": "row",
+            "button_label": "Add Item",
+            "sub_fields": [
+                {
+                    "key": "field_homepage_2_section_testimonials_item_title",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum"
+                },
+                {
+                    "key": "field_homepage_2_section_testimonials_item_copy",
+                    "label": "Copy",
+                    "name": "copy",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                },
+                {
+                    "key": "field_homepage_2_section_testimonials_item_image",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "array",
+                    "preview_size": "thumbnail"
+                },
+                {
+                    "key": "field_homepage_2_section_testimonials_item_url",
+                    "label": "URL",
+                    "name": "url",
+                    "type": "url"
+                },
+                {
+                    "key": "field_homepage_2_testimonials_items_item_quote_image",
+                    "label": "Quote Icon",
+                    "name": "quote_image",
+                    "type": "image",
+                    "return_format": "array",
+                    "preview_size": "thumbnail"
+                },
+                {
+                    "key": "field_homepage_2_testimonials_items_item_author_name",
+                    "label": "Author Name",
+                    "name": "author_name",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum"
+                },
+                {
+                    "key": "field_homepage_2_testimonials_items_item_author_role",
+                    "label": "Author Role",
+                    "name": "author_role",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum"
+                }
+            ]
+        },
+        {
+            "key": "field_homepage_2_section_portfolio_tab",
+            "label": "Portfolio",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_homepage_2_section_portfolio",
+            "label": "Show Portfolio Section",
+            "name": "sportshealing_homepage_2_portfolio_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_homepage_2_section_portfolio_eyebrow",
+            "label": "Portfolio Eyebrow",
+            "name": "sportshealing_homepage_2_portfolio_eyebrow",
+            "type": "text",
+            "default_value": "Lorem Ipsum"
+        },
+        {
+            "key": "field_homepage_2_section_portfolio_heading",
+            "label": "Portfolio Heading",
+            "name": "sportshealing_homepage_2_portfolio_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_homepage_2_section_portfolio_copy",
+            "label": "Portfolio Copy",
+            "name": "sportshealing_homepage_2_portfolio_copy",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>"
+        },
+        {
+            "key": "field_homepage_2_section_portfolio_shape_1",
+            "label": "Shape 1",
+            "name": "sportshealing_homepage_2_portfolio_shape_1",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_homepage_2_section_portfolio_posts",
+            "label": "Portfolio Posts",
+            "name": "sportshealing_homepage_2_portfolio_posts",
+            "type": "post_object",
+            "post_type": [
+                "sh_portfolio"
+            ],
+            "return_format": "object",
+            "multiple": 1,
+            "ui": 1,
+            "instructions": "Select the posts to show. If none are selected, latest published posts are used."
+        },
+        {
+            "key": "field_homepage_2_section_doctor_tab",
+            "label": "Doctor",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_homepage_2_section_doctor",
+            "label": "Show Doctor Section",
+            "name": "sportshealing_homepage_2_doctor_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_homepage_2_section_doctor_eyebrow",
+            "label": "Doctor Eyebrow",
+            "name": "sportshealing_homepage_2_doctor_eyebrow",
+            "type": "text",
+            "default_value": "Lorem Ipsum"
+        },
+        {
+            "key": "field_homepage_2_section_doctor_heading",
+            "label": "Doctor Heading",
+            "name": "sportshealing_homepage_2_doctor_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_homepage_2_section_doctor_copy",
+            "label": "Doctor Copy",
+            "name": "sportshealing_homepage_2_doctor_copy",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>"
+        },
+        {
+            "key": "field_homepage_2_section_doctor_posts",
+            "label": "Doctor Posts",
+            "name": "sportshealing_homepage_2_doctor_posts",
+            "type": "post_object",
+            "post_type": [
+                "sh_doctor"
+            ],
+            "return_format": "object",
+            "multiple": 1,
+            "ui": 1,
+            "instructions": "Select the posts to show. If none are selected, latest published posts are used."
+        },
+        {
+            "key": "field_homepage_2_section_pricing_tab",
+            "label": "Pricing",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_homepage_2_section_pricing",
+            "label": "Show Pricing Section",
+            "name": "sportshealing_homepage_2_pricing_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_homepage_2_section_pricing_eyebrow",
+            "label": "Pricing Eyebrow",
+            "name": "sportshealing_homepage_2_pricing_eyebrow",
+            "type": "text",
+            "default_value": "Lorem Ipsum"
+        },
+        {
+            "key": "field_homepage_2_section_pricing_heading",
+            "label": "Pricing Heading",
+            "name": "sportshealing_homepage_2_pricing_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_homepage_2_section_pricing_copy",
+            "label": "Pricing Copy",
+            "name": "sportshealing_homepage_2_pricing_copy",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>"
+        },
+        {
+            "key": "field_homepage_2_section_pricing_groups",
+            "label": "Pricing Groups",
+            "name": "sportshealing_homepage_2_pricing_groups",
+            "type": "repeater",
+            "layout": "row",
+            "button_label": "Add New Group",
+            "instructions": "Add groups such as Monthly, Yearly, Quarterly. Each group becomes a frontend pricing tab.",
+            "sub_fields": [
+                {
+                    "key": "field_homepage_2_section_pricing_group_name",
+                    "label": "Group Name",
+                    "name": "group_name",
+                    "type": "text",
+                    "default_value": "Monthly"
+                },
+                {
+                    "key": "field_homepage_2_section_pricing_group_items",
+                    "label": "Pricing Items",
+                    "name": "items",
+                    "type": "repeater",
+                    "layout": "row",
+                    "button_label": "Add Item",
+                    "sub_fields": [
+                        {
+                            "key": "field_homepage_2_section_pricing_group_item_label",
+                            "label": "Plan Label",
+                            "name": "label",
+                            "type": "text",
+                            "default_value": "Basic Plan"
+                        },
+                        {
+                            "key": "field_homepage_2_section_pricing_group_item_colour_class",
+                            "label": "Pricing Item Colour",
+                            "name": "colour_class",
+                            "type": "select",
+                            "instructions": "Controls the Homepage 2 pricing item colour/style class.",
+                            "choices": {
+                                "pricing-one": "Colour 1",
+                                "pricing-two": "Colour 2",
+                                "pricing-three": "Colour 3"
+                            },
+                            "default_value": "pricing-one",
+                            "ui": 1,
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_homepage_2_section_pricing_group_item_price",
+                            "label": "Price",
+                            "name": "price",
+                            "type": "text",
+                            "instructions": "Example: $30",
+                            "default_value": "$30"
+                        },
+                        {
+                            "key": "field_homepage_2_section_pricing_group_item_price_suffix",
+                            "label": "Price Suffix",
+                            "name": "price_suffix",
+                            "type": "text",
+                            "instructions": "Rendered inside the price <span>, e.g. /Monthly.",
+                            "default_value": "/Monthly"
+                        },
+                        {
+                            "key": "field_homepage_2_section_pricing_group_item_description",
+                            "label": "Description",
+                            "name": "description",
+                            "type": "textarea",
+                            "rows": 3,
+                            "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                        },
+                        {
+                            "key": "field_homepage_2_section_pricing_group_item_feature_intro",
+                            "label": "Feature Intro Text",
+                            "name": "feature_intro",
+                            "type": "text",
+                            "default_value": "What is included?"
+                        },
+                        {
+                            "key": "field_homepage_2_section_pricing_group_item_features",
+                            "label": "Features",
+                            "name": "features",
+                            "type": "textarea",
+                            "instructions": "Add one feature per line.",
+                            "rows": 6,
+                            "default_value": "Routine Checkups\nMedical Specialist\nNutritional Guidance\nProfessional Consultation\nOnline Booking\nEmergency Care"
+                        },
+                        {
+                            "key": "field_homepage_2_section_pricing_group_item_button_label",
+                            "label": "Button Text",
+                            "name": "button_label",
+                            "type": "text",
+                            "default_value": "Choose Plan"
+                        },
+                        {
+                            "key": "field_homepage_2_section_pricing_group_item_button_url",
+                            "label": "Button URL",
+                            "name": "button_url",
+                            "type": "url"
+                        },
+                        {
+                            "key": "field_homepage_2_section_pricing_group_item_highlighted",
+                            "label": "Highlight This Plan",
+                            "name": "highlighted",
+                            "type": "true_false",
+                            "ui": 1,
+                            "default_value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_homepage_2_section_faq_tab",
+            "label": "FAQ",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_homepage_2_section_faq",
+            "label": "Show FAQ Section",
+            "name": "sportshealing_homepage_2_faq_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_homepage_2_section_faq_eyebrow",
+            "label": "FAQ Eyebrow",
+            "name": "sportshealing_homepage_2_faq_eyebrow",
+            "type": "text",
+            "default_value": "Lorem Ipsum"
+        },
+        {
+            "key": "field_homepage_2_section_faq_heading",
+            "label": "FAQ Heading",
+            "name": "sportshealing_homepage_2_faq_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_homepage_2_section_faq_copy",
+            "label": "FAQ Copy",
+            "name": "sportshealing_homepage_2_faq_copy",
+            "type": "wysiwyg",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "default_value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>"
+        },
+        {
+            "key": "field_homepage_2_section_faq_image",
+            "label": "Video Image",
+            "name": "sportshealing_homepage_2_faq_image",
+            "type": "image",
+            "return_format": "array",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_homepage_2_section_faq_video_url",
+            "label": "Video URL",
+            "name": "sportshealing_homepage_2_faq_video_url",
+            "type": "url",
+            "default_value": "https://www.youtube.com/watch?v=Y-x0efG1seA"
+        },
+        {
+            "key": "field_homepage_2_section_faq_items",
+            "label": "FAQ Items",
+            "name": "sportshealing_homepage_2_faq_items",
+            "type": "repeater",
+            "layout": "row",
+            "button_label": "Add FAQ",
+            "sub_fields": [
+                {
+                    "key": "field_homepage_2_section_faq_item_title",
+                    "label": "Question",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Lorem Ipsum?"
+                },
+                {
+                    "key": "field_homepage_2_section_faq_item_copy",
+                    "label": "Answer",
+                    "name": "copy",
+                    "type": "textarea",
+                    "rows": 3,
+                    "default_value": "Lorem ipsum dolor sit amet."
+                }
+            ]
+        },
+        {
+            "key": "field_homepage_2_section_blog_tab",
+            "label": "Blog",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_homepage_2_section_blog",
+            "label": "Show Blog Section",
+            "name": "sportshealing_homepage_2_blog_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_homepage_2_section_blog_eyebrow",
+            "label": "Blog Eyebrow",
+            "name": "sportshealing_homepage_2_blog_eyebrow",
+            "type": "text",
+            "default_value": "Lorem Ipsum"
+        },
+        {
+            "key": "field_homepage_2_section_blog_heading",
+            "label": "Blog Heading",
+            "name": "sportshealing_homepage_2_blog_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum Dolor Sit Amet"
+        },
+        {
+            "key": "field_homepage_2_section_blog_sportshealing_homepage_2_blog_posts",
+            "label": "Blog Posts",
+            "name": "sportshealing_homepage_2_blog_posts",
+            "type": "post_object",
+            "post_type": [
+                "post"
+            ],
+            "return_format": "object",
+            "multiple": 1,
+            "ui": 1,
+            "instructions": "Select the posts to show in this section. If none are selected, the latest published posts are used."
+        },
+        {
+            "key": "field_homepage_2_section_instagram_tab",
+            "label": "Instagram",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_homepage_2_section_instagram",
+            "label": "Show Instagram Section",
+            "name": "sportshealing_homepage_2_instagram_enabled",
+            "type": "true_false",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_homepage_2_section_instagram_heading",
+            "label": "Instagram Heading",
+            "name": "sportshealing_homepage_2_instagram_heading",
+            "type": "text",
+            "default_value": "Lorem Ipsum"
+        },
+        {
+            "key": "field_homepage_2_section_instagram_items",
+            "label": "Instagram Items",
+            "name": "sportshealing_homepage_2_instagram_items",
+            "type": "repeater",
+            "layout": "row",
+            "button_label": "Add Instagram Image",
+            "sub_fields": [
+                {
+                    "key": "field_homepage_2_section_instagram_item_title",
+                    "label": "Image Label",
+                    "name": "title",
+                    "type": "text",
+                    "default_value": "Instagram Image"
+                },
+                {
+                    "key": "field_homepage_2_section_instagram_item_image",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "return_format": "array",
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_homepage_2_section_instagram_item_url",
+                    "label": "Instagram URL",
+                    "name": "url",
+                    "type": "url",
+                    "default_value": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "homepage-2-template.php"
+            }
+        ]
+    ],
+    "active": true,
+    "modified": 1776943362
+}

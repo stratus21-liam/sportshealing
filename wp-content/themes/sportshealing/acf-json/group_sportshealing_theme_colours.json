@@ -1,0 +1,267 @@
+{
+    "key": "group_sportshealing_theme_colours",
+    "title": "Theme Colours",
+    "fields": [
+        {
+            "key": "field_theme_colours_settings_tab",
+            "label": "Settings",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_theme_colours_active",
+            "label": "Use This Colour Preset",
+            "name": "sportshealing_theme_colours_active",
+            "type": "true_false",
+            "instructions": "Keep one preset active. If more than one is marked active, the newest saved preset wins.",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_theme_colours_loader_tab",
+            "label": "Page Loader",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_theme_colours_loader_enabled",
+            "label": "Enable Page Loader",
+            "name": "sportshealing_theme_colours_loader_enabled",
+            "type": "true_false",
+            "instructions": "Show or hide the full-screen page loader before the site finishes loading.",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_theme_colours_loader_text",
+            "label": "Loader Text",
+            "name": "sportshealing_theme_colours_loader_text",
+            "type": "text",
+            "instructions": "Each character is animated separately on the page loader.",
+            "default_value": "Sports",
+            "maxlength": 20
+        },
+        {
+            "key": "field_theme_colours_loader_svg",
+            "label": "Loader SVG",
+            "name": "sportshealing_theme_colours_loader_svg",
+            "type": "file",
+            "instructions": "Upload/select the loader SVG. Falls back to assets/images/loader.svg when empty.",
+            "return_format": "array",
+            "library": "all",
+            "mime_types": "svg"
+        },
+        {
+            "key": "field_theme_colours_eyebrow_icon_tab",
+            "label": "Eyebrow Icon",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_theme_colours_eyebrow_icon_enabled",
+            "label": "Show Eyebrow Icon",
+            "name": "sportshealing_theme_colours_eyebrow_icon_enabled",
+            "type": "true_false",
+            "instructions": "Show or hide the icon before every section eyebrow/sub-title.",
+            "ui": 1,
+            "default_value": 1
+        },
+        {
+            "key": "field_theme_colours_eyebrow_icon",
+            "label": "Eyebrow Icon",
+            "name": "sportshealing_theme_colours_eyebrow_icon",
+            "type": "file",
+            "instructions": "Upload/select the icon used before every section eyebrow. Falls back to assets/images/icon-sub-heading.svg when empty.",
+            "return_format": "array",
+            "library": "all",
+            "mime_types": "svg,png,webp,jpg,jpeg"
+        },
+        {
+            "key": "field_theme_colours_brand_colours_tab",
+            "label": "Brand Colours",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_theme_colours_primary_color",
+            "label": "Primary Colour",
+            "name": "sportshealing_theme_colours_primary_color",
+            "type": "color_picker",
+            "default_value": "#035E58",
+            "return_format": "string",
+            "enable_opacity": 0
+        },
+        {
+            "key": "field_theme_colours_white_color",
+            "label": "White Colour",
+            "name": "sportshealing_theme_colours_white_color",
+            "type": "color_picker",
+            "default_value": "#FFFFFF",
+            "return_format": "string",
+            "enable_opacity": 0
+        },
+        {
+            "key": "field_theme_colours_black_color",
+            "label": "Black Colour",
+            "name": "sportshealing_theme_colours_black_color",
+            "type": "color_picker",
+            "default_value": "#000000",
+            "return_format": "string",
+            "enable_opacity": 0
+        },
+        {
+            "key": "field_theme_colours_text_layout_tab",
+            "label": "Text & Layout",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_theme_colours_text_color",
+            "label": "Body Text Colour",
+            "name": "sportshealing_theme_colours_text_color",
+            "type": "color_picker",
+            "default_value": "#525252",
+            "return_format": "string",
+            "enable_opacity": 0
+        },
+        {
+            "key": "field_theme_colours_body_color",
+            "label": "Page Background Colour",
+            "name": "sportshealing_theme_colours_body_color",
+            "type": "color_picker",
+            "default_value": "#FFFFFF",
+            "return_format": "string",
+            "enable_opacity": 0
+        },
+        {
+            "key": "field_theme_colours_footer_color",
+            "label": "Footer Background Colour",
+            "name": "sportshealing_theme_colours_footer_color",
+            "type": "color_picker",
+            "default_value": "#111821",
+            "return_format": "string",
+            "enable_opacity": 0
+        },
+        {
+            "key": "field_theme_colours_border_color_one",
+            "label": "Light Border Colour",
+            "name": "sportshealing_theme_colours_border_color_one",
+            "type": "color_picker",
+            "default_value": "#F3F3F3",
+            "return_format": "string",
+            "enable_opacity": 0
+        },
+        {
+            "key": "field_theme_colours_border_color_two",
+            "label": "Strong Border Colour",
+            "name": "sportshealing_theme_colours_border_color_two",
+            "type": "color_picker",
+            "default_value": "#D3D3D3",
+            "return_format": "string",
+            "enable_opacity": 0
+        },
+        {
+            "key": "field_theme_colours_section_backgrounds_tab",
+            "label": "Section Backgrounds",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_theme_colours_background_one",
+            "label": "Soft Section Background",
+            "name": "sportshealing_theme_colours_background_one",
+            "type": "color_picker",
+            "default_value": "#F9F9FF",
+            "return_format": "string",
+            "enable_opacity": 0
+        },
+        {
+            "key": "field_theme_colours_background_two",
+            "label": "Tinted Section Background",
+            "name": "sportshealing_theme_colours_background_two",
+            "type": "color_picker",
+            "default_value": "#E6F9F8",
+            "return_format": "string",
+            "enable_opacity": 0
+        },
+        {
+            "key": "field_theme_colours_accent_tints_tab",
+            "label": "Accent Tints",
+            "name": "",
+            "type": "tab"
+        },
+        {
+            "key": "field_theme_colours_extra_color",
+            "label": "Accent Tint",
+            "name": "sportshealing_theme_colours_extra_color",
+            "type": "color_picker",
+            "default_value": "#DDF6FA",
+            "return_format": "string",
+            "enable_opacity": 0
+        },
+        {
+            "key": "field_theme_colours_extra_color_one",
+            "label": "Accent Tint One",
+            "name": "sportshealing_theme_colours_extra_color_one",
+            "type": "color_picker",
+            "default_value": "#FFF5F5",
+            "return_format": "string",
+            "enable_opacity": 0
+        },
+        {
+            "key": "field_theme_colours_extra_color_two",
+            "label": "Accent Tint Two",
+            "name": "sportshealing_theme_colours_extra_color_two",
+            "type": "color_picker",
+            "default_value": "#DFFAFF",
+            "return_format": "string",
+            "enable_opacity": 0
+        },
+        {
+            "key": "field_theme_colours_extra_color_three",
+            "label": "Accent Tint Three",
+            "name": "sportshealing_theme_colours_extra_color_three",
+            "type": "color_picker",
+            "default_value": "#FFFAEB",
+            "return_format": "string",
+            "enable_opacity": 0
+        },
+        {
+            "key": "field_theme_colours_extra_color_four",
+            "label": "Accent Neutral Background",
+            "name": "sportshealing_theme_colours_extra_color_four",
+            "type": "color_picker",
+            "default_value": "#F2F4F5",
+            "return_format": "string",
+            "enable_opacity": 0
+        },
+        {
+            "key": "field_theme_colours_extra_color_five",
+            "label": "Dark Accent Colour",
+            "name": "sportshealing_theme_colours_extra_color_five",
+            "type": "color_picker",
+            "default_value": "#0C193E",
+            "return_format": "string",
+            "enable_opacity": 0
+        },
+        {
+            "key": "field_theme_colours_extra_color_six",
+            "label": "Dark Accent Colour Two",
+            "name": "sportshealing_theme_colours_extra_color_six",
+            "type": "color_picker",
+            "default_value": "#0e131a",
+            "return_format": "string",
+            "enable_opacity": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "sh_theme_colour"
+            }
+        ]
+    ],
+    "active": true
+}
