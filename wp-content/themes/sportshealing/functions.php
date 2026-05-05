@@ -45,6 +45,47 @@ function sportshealing_setup(): void {
 add_action('after_setup_theme', 'sportshealing_setup');
 
 /**
+ * Ensure ACF WYSIWYG editors expose the heading formats needed by CMS content rows.
+ */
+function sportshealing_acf_wysiwyg_toolbars(array $toolbars): array {
+    foreach (['Full', 'Basic'] as $toolbar_name) {
+        if (isset($toolbars[$toolbar_name])) {
+            $toolbars[$toolbar_name][1] = $toolbars[$toolbar_name][1] ?? [];
+
+            if (!in_array('formatselect', $toolbars[$toolbar_name][1], true)) {
+                array_unshift($toolbars[$toolbar_name][1], 'formatselect');
+            }
+        }
+    }
+
+    return $toolbars;
+}
+add_filter('acf/fields/wysiwyg/toolbars', 'sportshealing_acf_wysiwyg_toolbars');
+
+/**
+ * Limit the format dropdown to paragraph and H1-H3 for ACF editors.
+ */
+function sportshealing_tiny_mce_block_formats(array $settings): array {
+    $settings['block_formats'] = 'Paragraph=p;Heading 1=h1;Heading 2=h2;Heading 3=h3';
+
+    return $settings;
+}
+add_filter('tiny_mce_before_init', 'sportshealing_tiny_mce_block_formats');
+
+/**
+ * Add a text-only option to default content text/media rows even before ACF JSON is synced.
+ */
+function sportshealing_default_content_row_media_type_field(array $field): array {
+    $field['instructions'] = __('Choose None for a full-width text row. Choose Image to use the Image field. Choose Video to use the Video URL and Video Thumbnail fields.', 'sportshealing');
+    $field['choices'] = array_merge([
+        'none' => __('None', 'sportshealing'),
+    ], $field['choices'] ?? []);
+
+    return $field;
+}
+add_filter('acf/load_field/key=field_default_content_row_media_type', 'sportshealing_default_content_row_media_type_field');
+
+/**
  * Build a URL to a bundled theme asset.
  */
 function sportshealing_asset_url(string $path): string {

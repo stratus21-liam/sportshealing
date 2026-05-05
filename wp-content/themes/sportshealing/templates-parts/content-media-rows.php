@@ -29,7 +29,9 @@ $section_classes = $has_previous_content
         <?php foreach ($content_rows as $index => $row) : ?>
             <?php
             $media_position = $row['media_position'] ?? 'right';
-            $text_classes = $media_position === 'left' ? 'col-lg-6 order-lg-2' : 'col-lg-6';
+            $media_type = $row['media_type'] ?? 'image';
+            $has_media = $media_type !== 'none';
+            $text_classes = !$has_media ? 'col-lg-12' : ($media_position === 'left' ? 'col-lg-6 order-lg-2' : 'col-lg-6');
             $media_classes = $media_position === 'left' ? 'col-lg-6 order-lg-1' : 'col-lg-6';
             ?>
             <div class="row align-items-center <?php echo $index ? 'pt-80 md-pt-50' : ''; ?>">
@@ -48,11 +50,13 @@ $section_classes = $has_previous_content
                         <?php endif; ?>
                     </div>
                 </div>
-                <div class="<?php echo esc_attr($media_classes); ?>">
-                    <div class="content-media-rows-media">
-                        <?php sportshealing_render_content_media_item($row); ?>
+                <?php if ($has_media) : ?>
+                    <div class="<?php echo esc_attr($media_classes); ?>">
+                        <div class="content-media-rows-media">
+                            <?php sportshealing_render_content_media_item($row); ?>
+                        </div>
                     </div>
-                </div>
+                <?php endif; ?>
             </div>
         <?php endforeach; ?>
     </div>

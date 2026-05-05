@@ -50,7 +50,7 @@
             "label": "Text Image/Video Rows",
             "name": "sportshealing_default_content_rows",
             "type": "repeater",
-            "instructions": "Optional. Add as many 50/50 text and media rows as needed. Choose Image or Video in each row; only the fields for the selected media type are used.",
+            "instructions": "Optional. Add as many text and media rows as needed. Choose None for a full-width text row.",
             "layout": "block",
             "button_label": "Add Text Image/Video Row",
             "sub_fields": [
@@ -74,7 +74,7 @@
                     "name": "content",
                     "type": "wysiwyg",
                     "tabs": "all",
-                    "toolbar": "basic",
+                    "toolbar": "full",
                     "media_upload": 0,
                     "default_value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>"
                 },
@@ -96,8 +96,9 @@
                     "label": "Media Type",
                     "name": "media_type",
                     "type": "select",
-                    "instructions": "Choose Image to use the Image field. Choose Video to use the Video URL and Video Thumbnail fields.",
+                    "instructions": "Choose None for a full-width text row. Choose Image to use the Image field. Choose Video to use the Video URL and Video Thumbnail fields.",
                     "choices": {
+                        "none": "None",
                         "image": "Image",
                         "video": "Video"
                     },
