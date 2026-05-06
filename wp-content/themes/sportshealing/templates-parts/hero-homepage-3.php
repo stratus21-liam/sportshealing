@@ -28,7 +28,7 @@ $hero_shape_fallbacks = [
                                 $slide_eyebrow = !empty($hero_slide['eyebrow']) ? (string) $hero_slide['eyebrow'] : '';
                                 $slide_title = !empty($hero_slide['title']) ? (string) $hero_slide['title'] : '';
                                 $slide_copy = !empty($hero_slide['copy']) ? (string) $hero_slide['copy'] : '';
-                                $slide_image = sportshealing_media_url($hero_slide['image'] ?? '', $index === 0 ? 'assets/images/hero/hero-3-1.png' : 'assets/images/hero/hero-3-2.png');
+                                $slide_image = !empty($hero_slide['image']) ? sportshealing_media_url($hero_slide['image']) : '';
                                 ?>
                                 <div class="swiper-slide">
                                     <div class="container">
@@ -54,13 +54,15 @@ $hero_shape_fallbacks = [
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-xl-6 col-lg-12">
-                                                <div class="hero-image">
-                                                    <figure class="hero-image-one">
-                                                        <img src="<?php echo esc_url($slide_image); ?>" alt="<?php echo esc_attr($slide_title); ?>">
-                                                    </figure>
+                                            <?php if ($slide_image) : ?>
+                                                <div class="col-xl-6 col-lg-12">
+                                                    <div class="hero-image">
+                                                        <figure class="hero-image-one">
+                                                            <img src="<?php echo esc_url($slide_image); ?>" alt="<?php echo esc_attr($slide_title); ?>">
+                                                        </figure>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            <?php endif; ?>
                                         </div>
                                     </div>
                                 </div>
