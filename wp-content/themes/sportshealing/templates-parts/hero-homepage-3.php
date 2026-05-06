@@ -8,9 +8,9 @@ array_unshift($hero_slides, [
     'image' => sportshealing_acf_section_value('image'),
 ]);
 $hero_primary_label = sportshealing_acf_section_text('primary_button_label') ?: __('Find A Consultant', 'sportshealing');
-$hero_primary_url = sportshealing_acf_section_page_url('primary_button_page', sportshealing_static_url('contact.html', ''));
+$hero_primary_url = sportshealing_acf_section_text('primary_button_external_url') ?: sportshealing_acf_section_page_url('primary_button_page', sportshealing_static_url('contact.html', ''));
 $hero_secondary_label = sportshealing_acf_section_text('secondary_button_label') ?: __('Meet Our Doctor', 'sportshealing');
-$hero_secondary_url = sportshealing_acf_section_page_url('secondary_button_page', sportshealing_static_url('doctor.html', ''));
+$hero_secondary_url = sportshealing_acf_section_text('secondary_button_external_url') ?: sportshealing_acf_section_page_url('secondary_button_page', sportshealing_static_url('doctor.html', ''));
 $hero_shape_fallbacks = [
     'shape_1' => ['hero-shape-one', 'assets/images/hero/hero-3-shape-1.svg'],
     'shape_2' => ['hero-shape-two', 'assets/images/hero/hero-3-shape-2.svg'],
