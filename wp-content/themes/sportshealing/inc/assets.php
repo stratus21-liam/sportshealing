@@ -38,7 +38,7 @@ function sportshealing_theme_scripts(): void {
     wp_enqueue_script('sportshealing-appear', sportshealing_asset_url('assets/js/jquery.appear.js'), ['jquery'], '1.0.0', true);
     wp_enqueue_script('sportshealing-magnific', sportshealing_asset_url('assets/js/jquery.magnific-popup.min.js'), ['jquery'], '1.0.0', true);
     wp_enqueue_script('sportshealing-smooth-scroll', sportshealing_asset_url('assets/js/SmoothScroll.js'), ['jquery'], '1.0.0', true);
-    wp_enqueue_script('sportshealing-main', sportshealing_asset_url('assets/js/main.js'), ['jquery'], '1.0.0', true);
+    wp_enqueue_script('sportshealing-main', sportshealing_asset_url('assets/js/main.js'), ['jquery'], filemtime(get_template_directory() . '/assets/js/main.js'), true);
     wp_enqueue_script('sportshealing-faq-search', sportshealing_asset_url('assets/js/faq-search.js'), [], wp_get_theme()->get('Version'), true);
 }
 add_action('wp_enqueue_scripts', 'sportshealing_theme_scripts');

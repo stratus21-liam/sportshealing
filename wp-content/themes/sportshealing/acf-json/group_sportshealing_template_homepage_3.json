@@ -312,11 +312,77 @@
             "ui": 1
         },
         {
+            "key": "field_homepage_3_section_video_video_source",
+            "label": "Video Source",
+            "name": "sportshealing_homepage_3_video_video_source",
+            "type": "select",
+            "instructions": "Choose whether the play button opens a YouTube watch link or an uploaded video file.",
+            "choices": {
+                "youtube": "YouTube Watch Link",
+                "file": "Uploaded File"
+            },
+            "default_value": "youtube",
+            "ui": 1,
+            "return_format": "value"
+        },
+        {
             "key": "field_homepage_3_section_video_video_url",
-            "label": "Video URL",
+            "label": "YouTube Watch URL",
             "name": "sportshealing_homepage_3_video_video_url",
             "type": "url",
-            "default_value": "https://www.youtube.com/watch?v=Y-x0efG1seA"
+            "default_value": "https://www.youtube.com/watch?v=Y-x0efG1seA",
+            "instructions": "Used when Video Source is YouTube Watch Link.",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_homepage_3_section_video_video_source",
+                        "operator": "==",
+                        "value": "youtube"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "field_homepage_3_section_video_video_file",
+            "label": "Video File",
+            "name": "sportshealing_homepage_3_video_video_file",
+            "type": "file",
+            "instructions": "Used when Video Source is Uploaded File. Upload an MP4, WebM, MOV, or OGV video.",
+            "return_format": "array",
+            "library": "all",
+            "mime_types": "mp4,webm,mov,ogv",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_homepage_3_section_video_video_source",
+                        "operator": "==",
+                        "value": "file"
+                    }
+                ]
+            ]
+        },
+        {
+            "key": "field_homepage_3_section_video_video_display",
+            "label": "Video Display",
+            "name": "sportshealing_homepage_3_video_video_display",
+            "type": "select",
+            "instructions": "Choose whether the uploaded video opens in a popup or replaces the section background image.",
+            "choices": {
+                "modal": "Modal Video",
+                "background": "Background Video"
+            },
+            "default_value": "modal",
+            "ui": 1,
+            "return_format": "value",
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_homepage_3_section_video_video_source",
+                        "operator": "==",
+                        "value": "file"
+                    }
+                ]
+            ]
         },
         {
             "key": "field_homepage_3_section_about_tab",

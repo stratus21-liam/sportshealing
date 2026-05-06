@@ -400,6 +400,30 @@ JS TABLE OF CONTENTS
 			preloader:false,
 			fixedContentPos:true
 		});
+		$(".video-file-popup").magnificPopup({
+			type:"inline",
+			mainClass:"mfp-fade",
+			removalDelay:160,
+			preloader:false,
+			fixedContentPos:true,
+			callbacks: {
+				open: function () {
+					var video = this.content.find("video").get(0);
+
+					if (video) {
+						video.currentTime = 0;
+						video.play();
+					}
+				},
+				close: function () {
+					var video = this.content.find("video").get(0);
+
+					if (video) {
+						video.pause();
+					}
+				}
+			}
+		});
 		// ------------------------ 16. counter
 		$(".counter-item").appear(function () {
 			var $count = $(this),
