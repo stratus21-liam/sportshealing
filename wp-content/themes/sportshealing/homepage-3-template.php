@@ -8,11 +8,15 @@
     <?php sportshealing_render_template_part('hero-homepage-3.php', 'sportshealing_homepage_3_hero'); ?>
 <?php endif; ?>
 
-                <?php if (sportshealing_section_enabled('sportshealing_homepage_3_marquee_ticker_enabled')) : ?>
+<?php if (sportshealing_section_enabled('sportshealing_homepage_3_marquee_ticker_enabled')) : ?>
     <?php sportshealing_render_template_part('marquee-ticker-homepage-3.php', 'sportshealing_homepage_3_marquee_ticker'); ?>
 <?php endif; ?>
 
-                <?php if (sportshealing_section_enabled('sportshealing_homepage_3_about_enabled')) : ?>
+<?php if (sportshealing_section_enabled('sportshealing_homepage_3_video_enabled')) : ?>
+    <?php sportshealing_render_template_part('video.php', 'sportshealing_homepage_3_video'); ?>
+<?php endif; ?>
+
+<?php if (sportshealing_section_enabled('sportshealing_homepage_3_about_enabled')) : ?>
     <?php sportshealing_render_template_part('about-homepage-3.php', 'sportshealing_homepage_3_about'); ?>
 <?php endif; ?>
 
@@ -20,9 +24,7 @@
     <?php sportshealing_render_template_part('counter-homepage-3.php', 'sportshealing_homepage_3_counter'); ?>
 <?php endif; ?>
 
-                <?php if (sportshealing_section_enabled('sportshealing_homepage_3_video_enabled')) : ?>
-    <?php sportshealing_render_template_part('video.php', 'sportshealing_homepage_3_video'); ?>
-<?php endif; ?>
+
 
                 <?php if (sportshealing_section_enabled('sportshealing_homepage_3_services_enabled')) : ?>
     <?php sportshealing_render_template_part('services-homepage-3.php', 'sportshealing_homepage_3_services'); ?>
