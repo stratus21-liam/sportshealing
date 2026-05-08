@@ -1,25 +1,31 @@
 /* Newedge custom CSS here */
 
 .service-entry-content ul,
-.service-entry-content ol {
+.service-entry-content ol,
+.services-content ul,
+.services-content ol {
     margin: 0 0 20px;
     padding-left: 24px;
 }
 
-.service-entry-content ul {
+.service-entry-content ul,
+.services-content ul {
     list-style: disc;
 }
 
-.service-entry-content ol {
+.service-entry-content ol,
+.services-content ol {
     list-style: decimal;
 }
 
-.service-entry-content li {
+.service-entry-content li,
+.services-content li {
     margin-bottom: 8px;
     list-style: disc;
 }
 
-.service-entry-content li:last-child {
+.service-entry-content li:last-child,
+.services-content li:last-child {
     margin-bottom: 0;
 }
 
@@ -55,7 +61,8 @@
     z-index: -2;
 }
 
-.service-entry-content h1, .service-entry-content h2, .service-entry-content h3, .service-entry-content h4{
+.service-entry-content h1, .service-entry-content h2, .service-entry-content h3, .service-entry-content h4,
+.services-content h1, .services-content h2, .services-content h3, .services-content h4{
     margin-top: 15px;
     margin-bottom: 15px;
 }
