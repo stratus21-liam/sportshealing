@@ -3,13 +3,24 @@ $hero_primary_label = sportshealing_acf_section_text('primary_button_label') ?: 
 $hero_primary_url = sportshealing_acf_section_page_url('primary_button_page', sportshealing_static_url('appointment.html', ''));
 $hero_secondary_label = sportshealing_acf_section_text('secondary_button_label') ?: __('Our Services', 'sportshealing');
 $hero_secondary_url = sportshealing_acf_section_page_url('secondary_button_page', sportshealing_static_url('services.html', ''));
+$hero_shapes = [
+    'shape_1' => ['hero-shape-one', 'hero shape one'],
+    'shape_2' => ['hero-shape-two', 'hero shape two'],
+    'shape_3' => ['hero-shape-three', 'hero shape three'],
+];
 ?>
 <!-- hero section start -->
                 <section class="hero-section-1" data-img-src="<?php echo esc_url(sportshealing_acf_section_named_image_url('background_image', 'assets/images/hero/banner_bg.png')); ?>">
                     <div class="hero-shape">
-                        <img class="hero-shape-one" src="<?php echo esc_url(sportshealing_acf_section_named_image_url('shape_1', 'assets/images/shape/shape-4.png')); ?>" alt="hero shape one">
-                        <img class="hero-shape-two" src="<?php echo esc_url(sportshealing_acf_section_named_image_url('shape_2', 'assets/images/shape/square-blue.png')); ?>" alt="hero shape two">
-                        <img class="hero-shape-three" src="<?php echo esc_url(sportshealing_acf_section_named_image_url('shape_3', 'assets/images/shape/plus-orange.png')); ?>" alt="hero shape three">
+                        <?php foreach ($hero_shapes as $shape_key => [$shape_class, $shape_alt]) : ?>
+                            <?php
+                            $shape_value = sportshealing_acf_section_value($shape_key);
+                            $shape_url = $shape_value ? sportshealing_media_url($shape_value) : '';
+                            ?>
+                            <?php if ($shape_url) : ?>
+                                <img class="<?php echo esc_attr($shape_class); ?>" src="<?php echo esc_url($shape_url); ?>" alt="<?php echo esc_attr($shape_alt); ?>">
+                            <?php endif; ?>
+                        <?php endforeach; ?>
                     </div>
                     <div class="container">
                         <div class="row justify-content-between align-items-center">
@@ -57,11 +68,11 @@ $hero_secondary_url = sportshealing_acf_section_page_url('secondary_button_page'
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="round-shape">
+                                    <!-- <div class="round-shape">
                                         <span></span>
                                         <span></span>
                                         <span></span>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>

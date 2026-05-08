@@ -3,6 +3,8 @@ $why_features = sportshealing_acf_section_items();
 $why_checklist = sportshealing_acf_section_value('checklist_items');
 $why_checklist = is_array($why_checklist) ? $why_checklist : [];
 $why_about_url = sportshealing_acf_section_page_url('circle_page', sportshealing_static_url('about.html', ''));
+$why_circle_image = sportshealing_acf_section_value('circle_image');
+$why_circle_image_url = $why_circle_image ? sportshealing_media_url($why_circle_image) : '';
 ?>
 <!-- why-section start -->
                 <section class="why-choose-section-1 pt-100 md-pt-80 pb-100 md-pb-80">
@@ -55,12 +57,14 @@ $why_about_url = sportshealing_acf_section_page_url('circle_page', sportshealing
                                             <img src="<?php echo esc_url(sportshealing_acf_section_named_image_url('image_2', 'assets/images/why-choose/why-choose-img-1-2.jpg')); ?>" alt="why choose image two">
                                         </figure>
                                     </div>
-                                    <div class="why-choose-about-circle">
-                                        <a class="about-circle" href="<?php echo esc_url($why_about_url); ?>" aria-label="<?php esc_attr_e('About us', 'sportshealing'); ?>">
-                                            <img src="<?php echo esc_url(sportshealing_acf_section_named_image_url('circle_image', 'assets/images/shape/round-about-us.png')); ?>" alt="round about us">
-                                            <i class="fa-solid fa-arrow-right"></i>
-                                        </a>
-                                    </div>
+                                    <?php if ($why_circle_image_url) : ?>
+                                        <div class="why-choose-about-circle">
+                                            <a class="about-circle" href="<?php echo esc_url($why_about_url); ?>" aria-label="<?php esc_attr_e('About us', 'sportshealing'); ?>">
+                                                <img src="<?php echo esc_url($why_circle_image_url); ?>" alt="round about us">
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>
